@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica CV</title>
+
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Fuente de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="Css/cv.css" />
+  </head>
+
+  <body>
+    <!-- Encabezado (header) -->
+    <header class="encabezado">
+      <!-- Contenedor de la foto -->
+      <div class="contenedor-foto">
+        <div class="encabezado__foto encabezado__foto--fuera">
+        <div class="encabezado__foto encabezado__foto--dentro">
+          <img src="WhatsApp Image 2022-11-05 at 02.30.19.jpeg" alt="Foto de Perfil" />
+        </div>
+      </div>
+      </div>
+      
+      <!-- Contenedor de los datos principales -->
+      <div class="encabezado__principal">
+        <h1 class="principal__nombre">Lorena de los Angeles Mercado</h1>
+        <div class="principal__contacto">
+          <p>
+            <i class="bi bi-whatsapp"></i>
+            <span class="contacto__whatsapp">3878-438353</span>
+          </p>
+          <p>
+            <i class="bi bi-envelope-at"></i>
+            <span class="contacto__facebook">lorepop43@gmail.com</span>
+          </p>
+          <p>
+            <i class="bi bi-facebook"></i>
+            <span class="contacto__mail">Lore Mercado</span>
+          </p>
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Sección Principal (main) -->
+    <main class="principal">
+      <!-- Parte Izquierda -->
+      <div class="principal__izquierda">
+        <!-- Sobre mí -->
+        <div class="izquierda__caracteristica">
+          <div class="caracteristica__titulo">
+            <h2>Sobre mí</h2>
+          </div>
+          <div class="caracteristica__cuerpo">
+            <p>
+              Desarrollador web con experiencia en la creación de sitios web
+              utilizando lenguajes de programación como HTML, CSS, JavaScript y
+              frameworks como React y Angular. Estoy familiarizado con el
+              trabajo en equipo y la comunicación efectiva.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="izquierda__caracteristica">
+          <div class="caracteristica__titulo">
+            <h2>Contacto</h2>
+          </div>
+          <div class="caracteristica__cuerpo">
+            <div class="caracteristica__contacto">
+              <div class="contacto__info">
+                <p class="contacto__icono"><i class="bi bi-whatsapp"></i></p>
+                <p>3878-438353</p>
+              </div>
+              <div class="contacto__info">
+                <p class="contacto__icono"><i class="bi bi-envelope-at"></i></p>
+                <p>lorepop43@gmail.com</p>
+              </div>
+              <div class="contacto__info">
+                <p class="contacto__icono"><i class="bi bi-facebook"></i></p>
+                <p>Lore Mercado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habilidades -->
+        <div class="izquierda__caracteristica">
+          <div class="caracteristica__titulo">
+            <h2>Habilidades</h2>
+          </div>
+          <div class="caracteristica__cuerpo caracteristica__cuerpo--habilidades">
+            <div class="cuerpo__habilidad cuerpo__habilidad--html">
+              <svg class="progress-circle" width="50" height="50">
+                <circle
+                  class="habilidad__progress-bar habilidad__progress-bar--html"
+                  cx="25"
+                  cy="25"
+                  r="20"
+                ></circle>
+                <text x="25" y="25" class="progress-text">90%</text>
+              </svg>
+              <p>HTML</p>
+            </div>
+            <div class="cuerpo__habilidad">
+              <svg class="progress-circle" width="50" height="50">
+                <circle
+                  class="habilidad__progress-bar habilidad__progress-bar--css"
+                  cx="25"
+                  cy="25"
+                  r="20"
+                ></circle>
+                <text x="25" y="25" class="progress-text">80%</text>
+              </svg>
+              <p>CSS</p>
+            </div>
+            <div class="cuerpo__habilidad">
+              <svg class="progress-circle" width="50" height="50">
+                <circle
+                  class="habilidad__progress-bar habilidad__progress-bar--javascript"
+                  cx="25"
+                  cy="25"
+                  r="20"
+                ></circle>
+                <text x="25" y="25" class="progress-text">75%</text>
+              </svg>
+              <p>JavaScript</p>
+            </div>
+            <div class="cuerpo__habilidad">
+              <svg class="progress-circle" width="50" height="50">
+                <circle
+                  class="habilidad__progress-bar habilidad__progress-bar--comunicacion"
+                  cx="25"
+                  cy="25"
+                  r="20"
+                ></circle>
+                <text x="25" y="25" class="progress-text">95%</text>
+              </svg>
+              <p>Comunicación</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intereses -->
+        <div class="izquierda__caracteristica">
+          <div class="caracteristica__titulo">
+            <h2>Intereses</h2>
+          </div>
+          <div class="caracteristica__cuerpo caracteristica__cuerpo--intereses">
+            <div class="cuerpo__interes">
+              <p><i class="bi bi-airplane-fill"></i></p>
+              <div class="interes__nombre">Viajar</div>
+            </div>
+            <div class="cuerpo__interes">
+              <p><i class="bi bi-music-note-beamed"></i></p>
+              <div class="interes__nombre">Música</div>
+            </div>
+            <div class="cuerpo__interes">
+              <p><i class="bi bi-book-fill"></i></p>
+              <div class="interes__nombre">Leer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parte Derecha -->
+      <div class="principal__derecha">
+        <!-- Experiencia laboral -->
+        <div class="derecha__infomacion">
+          <h2 class="informacion__titulo">Experiencia laboral</h2>
+          <div class="informacion__experiencia">
+            <p>2019 - Presente</p>
+            <div class="experiencia__trabajo">
+              <h3>Desarrollador Web Senior</h3>
+              <p>ABC Company</p>
+              <ul>
+                <li>Diseño y desarrollo de sitios web y aplicaciones web para clientes de diversos sectores.</li>
+                <li>Participación en la creación y mejora de productos digitales para la empresa.</li>
+                <li>Gestión de proyectos y liderazgo de equipos de desarrollo.</li>
+              </ul>
+            </div>
+             <p>2017 -2019</p>
+            <div class="experiencia__trabajo">
+              <h3>Desarrollador Web Junior</h3>
+              <p>XYZ Agency</p>
+              <ul>
+                <li>Colaboración en la creación de sitios web y aplicaciones web para clientes de diversos sectores.</li>
+                <li>Participación en la investigación y desarrollo de nuevas tecnologías para la empresa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Educación -->
+        <div class="derecha__infomacion">
+          <h2 class="informacion__titulo">Educación</h2>
+          <div class="informacion__educacion">
+            <p>2013 - 2017</p>
+            <div class="educacion__escuela">
+              <h3>Licenciatura en Ciencias de la Computación</h3>
+              <p>Universidad Nacional de Salta</p>
+            </div>
+            <p>2018</p>
+            <div class="educacion__escuela">
+              <h3>Certificación en desarrollo de aplicaciones web</h3>
+              <p>Microsoft</p>
+            </div>
+            <p>2019</p>
+            <div class="educacion__escuela">
+              <h3>Certificación en desarrollo de sitios web</h3>
+              <p>Google</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="derecha__infomacion">
+          <h2 class="informacion__titulo">Idiomas</h2>
+          <div class="informacion__idiomas">
+            <p>Español</p>
+            <progress class="idiomas__progreso" value="100" max="100"></progress>
+            <p>Inglés</p>
+            <progress class="idiomas__progreso" value="70" max="100"></progress>
+            <p>Francés</p>
+            <progress class="idiomas__progreso" value="40" max="100"></progress>
+          </div>
+        </div>
+
+        <!-- Formación complementaria -->
+        <div class="derecha__infomacion">
+          <h2 class="informacion__titulo">Formación complementaria</h2>
+          <ul class="informacion__cursos">
+            <li>Secretariado administrativo comercial</li>
+            <li>Secretario jurídico administrativo</li>
+            <li>Marketing digital</li>
+            <li>Curso de Programación Web Avanzada utilizando frameworks como React y Angular.</li>
+            <li>Curso de Diseño de Bases de Datos.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

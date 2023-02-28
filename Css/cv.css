@@ -1,0 +1,293 @@
+/* Colores */
+:root {
+  --color-primario: #f5b5eb;
+  --color-secundario: #74a8a5;
+  --fuente-primaria: black;
+  --fuente-secundaria: white;
+}
+/* Estilos del curriculum */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 90%;
+  margin: auto;
+  font-family: "Merriweather", serif;
+}
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+.contenedor-foto {
+  flex: 30%;
+  display: flex;
+  justify-content: end;
+}
+.encabezado__foto {
+  border-radius: 50%;
+}
+.encabezado__foto--fuera {
+  width: 220px;
+  height: 220px;
+  border: 20px solid var(--color-secundario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.encabezado__foto--dentro {
+  width: 185px;
+  height: 185px;
+  border: 5px solid white;
+  overflow: hidden;
+}
+.encabezado__foto--dentro img {
+  display: block;
+  max-width: 130%;
+  max-height: 130%;
+}
+.encabezado__principal {
+  flex: 70%;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--color-primario);
+  margin-right: 1rem;
+  border-right: 20px solid var(--color-secundario);
+  text-align: center;
+}
+.principal__contacto {
+  display: flex;
+  justify-content: space-evenly;
+}
+.principal {
+  display: flex;
+}
+/* ---- Parte izquierda ---- */
+.principal__izquierda {
+  width: 30%;
+  margin: 1rem;
+}
+  .izquierda__caracteristica {
+    width: 100%;
+    height: 240px;
+    margin: 1rem 0;
+    position: relative;
+  }
+.caracteristica__titulo {
+  border: 3px solid white;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: var(--color-primario);
+  color: var(--fuente-primaria);
+}
+.caracteristica__cuerpo {
+  margin-top: -20px;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 220px;
+  background-color: var(--color-secundario);
+  color: var(--fuente-secundaria);
+  position: absolute;
+  z-index: -1;
+}
+/* Sección "Contacto" */
+.caracteristica__contacto {
+  text-align: center;
+  margin-top: -5px;
+}
+.contacto__info {
+  margin-bottom: 10px;
+}
+.contacto__icono {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 4px 0;
+  background-color: var(--color-primario);
+}
+/* Sección "Habilidades" */
+.caracteristica__cuerpo--habilidades {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px 0;
+  justify-content: center;
+  text-align: center;
+}
+.progress-circle {
+  fill: none;
+  stroke: var(--fuente-secundaria);
+}
+.habilidad__progress-bar {
+  fill: none;
+  stroke: var(--color-primario);
+  stroke-width: 5;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+.progress-text {
+  font-size: .7rem;
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+.habilidad__progress-bar--html {
+  animation: progress-bar--html 2s ease-out forwards
+}
+.habilidad__progress-bar--css {
+  animation: progress-bar--css 2s ease-out forwards;
+}
+.habilidad__progress-bar--javascript {
+    animation: progress-bar--javascript 2s ease-out forwards;
+}
+.habilidad__progress-bar--comunicacion {
+    animation: progress-bar--comunicacion 2s ease-out forwards;
+}
+/* ----Animaciones---- */
+@keyframes progress-bar--html {
+  from {
+    stroke-dasharray: 0 126;
+  }
+  to {
+    stroke-dasharray: 113.4 12.6;
+  }
+}
+@keyframes progress-bar--css {
+  from {
+    stroke-dasharray: 0 126;
+  }
+  to {
+    stroke-dasharray: 100.8 25.2;
+  }
+}
+@keyframes progress-bar--javascript {
+  from {
+    stroke-dasharray: 0 126;
+  }
+  to {
+    stroke-dasharray: 94.5 31.5;
+  }
+}
+@keyframes progress-bar--comunicacion {
+  from {
+    stroke-dasharray: 0 126;
+  }
+  to {
+    stroke-dasharray: 119.7 6.3;
+  }
+}
+/* ---------------------- */
+/* Sección "Intereses" */
+.caracteristica__cuerpo--intereses{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.cuerpo__interes i {
+  font-size: 3rem;
+}
+.interes__nombre {
+  width: 80%;
+  margin: auto;
+  background-color: var(--color-primario);
+  color: var(--fuente-primaria);
+  border-radius: 1rem;
+  padding: 2px;
+}
+/* ---- Parte derecha ---- */
+.principal__derecha {
+  width: 70%;
+  margin: 2rem 1rem;
+}
+.informacion__titulo {
+  background-color: var(--color-primario);
+  padding: 5px 2rem;
+  border-radius: 1.5rem 0 0 1.5rem;
+  border-right: 20px solid var(--color-secundario);
+}
+/* Sección Experiencia */
+.informacion__experiencia {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 1rem;
+  margin: 1rem 2rem;
+}
+/* Sección Educación */
+.informacion__educacion {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 1rem;
+  margin: 1rem 2rem;
+}
+/* Sección Idiomas */
+.informacion__idiomas {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1rem;
+  margin: 1rem 2rem;
+}
+.idiomas__progreso {
+  height: 20px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #ddd;
+  -webkit-appearance: none;
+  appearance: none;
+} 
+.idiomas__progreso::-webkit-progress-bar {
+  border-radius: 10px;
+  background-color: #ddd;
+}
+.idiomas__progreso::-webkit-progress-value {
+  border-radius: 10px;
+  background-color: var(--color-secundario);
+}
+.idiomas__progreso::-moz-progress-bar {
+  border-radius: 10px;
+  background-color: var(--color-secundario);
+}
+.informacion__cursos {
+  margin: 1rem 2rem;
+}
+.informacion__cursos li {
+  padding: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1040px) {
+  .principal__izquierda {
+    width: 300px;
+  }
+  .principal__derecha {
+    width: calc(100%-300px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .encabezado {
+    flex-direction: column;
+  }
+  .principal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .principal__contacto {
+    flex-direction: column;
+  }
+  .principal__derecha {
+    margin: 1rem .5rem;
+  }
+  .informacion__experiencia,
+  .informacion__educacion,
+  .informacion__idiomas {
+    grid-template-columns: auto;
+    margin: 1rem .5rem;
+  }
+}
